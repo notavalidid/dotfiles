@@ -1,0 +1,95 @@
+# Environment vars
+env:
+  TERM: alacritty
+
+# Scroll config
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  history: 100000
+  # Scrolling distance multiplier.
+  multiplier: 3
+
+font:
+  # Normal (roman) font face
+  normal:
+    family: "IBM Plex Mono"
+    style: regular
+  # Bold font face
+  bold:
+    family: "IBM Plex Mono"
+    style: bold
+  # Italic font face
+  italic:
+    family: "IBM Plex Mono"
+    style: italic
+  size: 11
+
+# Colors (Hyper)
+colors:
+  # Default colors
+  primary:
+    background: '#0d1117'
+    foreground: '#b3b1ad'
+
+  cursor:
+    text:       '#F81CE5'
+    cursor:     '#ffffff'
+
+  # Normal colors
+  normal:
+    black:      '#484f58'
+    red:        '#ff7b72'
+    green:      '#3fb950'
+    yellow:     '#d29922'
+    blue:       '#58a6ff'
+    magenta:    '#bc8cff'
+    cyan:       '#39c5cf'
+    white:      '#b1bac4'
+
+  # Bright colors
+  bright:
+    black:      '#6e7681'
+    red:        '#ffa198'
+    green:      '#56d364'
+    yellow:     '#e3b341'
+    blue:       '#79c0ff'
+    magenta:    '#d2a8ff'
+    cyan:       '#56d4dd'
+    white:      '#f0f6fc'
+
+  indexed_colors:
+    - { index: 16, color: '#d18616' }
+    - { index: 17, color: '#ffa198' }
+
+cursor:
+  style:
+    shape: Underline
+    blinking: Always
+  unfocused_hollow: false
+  thickness: 0.15
+
+# Background opacity
+window:
+  opacity: 0.9
+
+# Live config reload (changes require restart)
+live_config_reload: true
+
+# Shell
+shell:
+  program: /bin/zsh
+
+# Startup directory
+working_directory: None
+
+# url launcher
+mouse:
+  hint:
+    launcher:
+      program: firefox
+
+key_bindings:
+- { key: Left, mods: Control, action: ResetFontSize }
+- { key: Right, mods: Control, action: ResetFontSize }
+- { key: Up, mods: Control, action: IncreaseFontSize }
+- { key: Down, mods: Control, action: DecreaseFontSize }
